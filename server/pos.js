@@ -19,7 +19,16 @@ const qtyNum = z.coerce.number().positive().max(100000);
 const METHODS = ["Cash", "Transfer", "POS Card"];
 const PIN_MAX_FAILS = 5;
 
-export const DEFAULT_PROFILE = { name: "Blades & Butchers", tagline: "From Ranch to Retail", address: "", phone: "", email: "", tin: "", receiptFooter: "Thank you for shopping with us!", scaleLabel: "weight" };
+export const DEFAULT_PROFILE = {
+  name: "Blades & Butchers",
+  tagline: "From Ranch to Retail",
+  address: "Shop A01, Vegas Mall, Atakpame Street, Off Adetokunbo Ademola Crescent, Wuse 2, Abuja",
+  phone: "+234 701 555 1755, +234 810 784 1658",
+  email: "info@bladesbutchers.com",
+  tin: "",
+  receiptFooter: "Thank you for choosing Blades & Butchers!",
+  scaleLabel: "weight"
+};
 /**
  * Cashiers never open a till and managers set nothing up: the first sale records a till session for that cashier behind the
  * scenes (no float — change money stays outside the system). End day is a blind count of the cash taken.
